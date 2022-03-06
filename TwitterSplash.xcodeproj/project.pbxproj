@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		170A7F2927D4203400180992 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170A7F2827D4203400180992 /* AppDelegate.swift */; };
-		170A7F2B27D4203400180992 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170A7F2A27D4203400180992 /* SceneDelegate.swift */; };
-		170A7F2D27D4203400180992 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170A7F2C27D4203400180992 /* ViewController.swift */; };
 		170A7F3027D4203400180992 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 170A7F2E27D4203400180992 /* Main.storyboard */; };
 		170A7F3227D4203700180992 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 170A7F3127D4203700180992 /* Assets.xcassets */; };
 		170A7F3527D4203700180992 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 170A7F3327D4203700180992 /* LaunchScreen.storyboard */; };
+		170A7F3E27D420B800180992 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170A7F3D27D420B800180992 /* SplashViewController.swift */; };
+		170A7F4027D420C100180992 /* SplashPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170A7F3F27D420C100180992 /* SplashPresenter.swift */; };
+		170A7F4227D420CF00180992 /* SplashAnimatior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170A7F4127D420CF00180992 /* SplashAnimatior.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		170A7F2527D4203400180992 /* TwitterSplash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterSplash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		170A7F2827D4203400180992 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		170A7F2A27D4203400180992 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		170A7F2C27D4203400180992 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		170A7F2F27D4203400180992 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		170A7F3127D4203700180992 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		170A7F3427D4203700180992 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		170A7F3627D4203700180992 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		170A7F3D27D420B800180992 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		170A7F3F27D420C100180992 /* SplashPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPresenter.swift; sourceTree = "<group>"; };
+		170A7F4127D420CF00180992 /* SplashAnimatior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashAnimatior.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +59,23 @@
 			isa = PBXGroup;
 			children = (
 				170A7F2827D4203400180992 /* AppDelegate.swift */,
-				170A7F2A27D4203400180992 /* SceneDelegate.swift */,
-				170A7F2C27D4203400180992 /* ViewController.swift */,
+				170A7F3C27D4205500180992 /* SplashView */,
 				170A7F2E27D4203400180992 /* Main.storyboard */,
-				170A7F3127D4203700180992 /* Assets.xcassets */,
 				170A7F3327D4203700180992 /* LaunchScreen.storyboard */,
 				170A7F3627D4203700180992 /* Info.plist */,
+				170A7F3127D4203700180992 /* Assets.xcassets */,
 			);
 			path = TwitterSplash;
+			sourceTree = "<group>";
+		};
+		170A7F3C27D4205500180992 /* SplashView */ = {
+			isa = PBXGroup;
+			children = (
+				170A7F3D27D420B800180992 /* SplashViewController.swift */,
+				170A7F3F27D420C100180992 /* SplashPresenter.swift */,
+				170A7F4127D420CF00180992 /* SplashAnimatior.swift */,
+			);
+			path = SplashView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				170A7F2D27D4203400180992 /* ViewController.swift in Sources */,
+				170A7F4027D420C100180992 /* SplashPresenter.swift in Sources */,
 				170A7F2927D4203400180992 /* AppDelegate.swift in Sources */,
-				170A7F2B27D4203400180992 /* SceneDelegate.swift in Sources */,
+				170A7F4227D420CF00180992 /* SplashAnimatior.swift in Sources */,
+				170A7F3E27D420B800180992 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,11 +304,15 @@
 				DEVELOPMENT_TEAM = CBSKMU7MH4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TwitterSplash/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TwitterSplash;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +322,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,11 +336,15 @@
 				DEVELOPMENT_TEAM = CBSKMU7MH4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TwitterSplash/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = TwitterSplash;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +354,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
