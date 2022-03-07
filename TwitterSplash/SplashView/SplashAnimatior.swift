@@ -61,9 +61,10 @@ final class SplashAnimator: SplashAnimatorDescription {
         mask.contentsGravity = .resizeAspect
         mainWindow.layer.mask = mask
         
-        // Fading logo image
-        let maskBackgroundView = UIImageView(image: SplashViewController.logoImageBig)
-        maskBackgroundView.frame = mask.frame
+        // Fading UIView
+        let maskBackgroundView = UIView()
+        maskBackgroundView.frame = mainWindow.frame
+        maskBackgroundView.backgroundColor = .white
         mainWindow.addSubview(maskBackgroundView)
         mainWindow.bringSubviewToFront(maskBackgroundView)
         
@@ -79,12 +80,9 @@ final class SplashAnimator: SplashAnimatorDescription {
             mainWindow.transform = .identity
         })
         
-        [mask, maskBackgroundView.layer].forEach { layer in
-            addScalingAnimation(to: layer, duration: 0.4)
-        }
+        addScalingAnimation(to: mask, duration: 0.4)
         
-        maskBackgroundView.backgroundColor = .white
-        UIView.animate(withDuration: 0.2, delay: 0.1, options: [], animations: {
+        UIView.animate(withDuration: 0.1, delay: 0.1, options: [], animations: {
             maskBackgroundView.alpha = 0
         }) { _ in
             maskBackgroundView.removeFromSuperview()
